@@ -1,1 +1,1 @@
-ok  	workerpool	1.453s	coverage: 100.0% of statements
+ok  	workerpool	1.029s	coverage: 100.0% of statements

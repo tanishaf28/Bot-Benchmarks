@@ -1,15 +1,16 @@
-goos: darwin
-goarch: arm64
+goos: linux
+goarch: amd64
 pkg: workerpool
-BenchmarkSequential-6   	  181891	      6154 ns/op	   81925 B/op	       1 allocs/op
-BenchmarkSequential-6   	  190507	      6417 ns/op	   81925 B/op	       1 allocs/op
-BenchmarkSequential-6   	  190970	      6676 ns/op	   81924 B/op	       1 allocs/op
-BenchmarkSequential-6   	  177475	      7323 ns/op	   81924 B/op	       1 allocs/op
-BenchmarkSequential-6   	  167281	      6959 ns/op	   81924 B/op	       1 allocs/op
-BenchmarkWorkerPool-6   	     399	   3209711 ns/op	   82593 B/op	      11 allocs/op
-BenchmarkWorkerPool-6   	     391	   3164299 ns/op	   82475 B/op	      11 allocs/op
-BenchmarkWorkerPool-6   	     376	   3182494 ns/op	   82482 B/op	      11 allocs/op
-BenchmarkWorkerPool-6   	     378	   3175992 ns/op	   82449 B/op	      11 allocs/op
-BenchmarkWorkerPool-6   	     376	   3183590 ns/op	   82462 B/op	      11 allocs/op
+cpu: Intel(R) Xeon(R) Processor
+BenchmarkSequential-4   	   74118	     15820 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkSequential-4   	   79615	     15632 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkSequential-4   	   79022	     16069 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkSequential-4   	   77985	     14785 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkSequential-4   	   85144	     16463 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkWorkerPool-4   	     386	   3223679 ns/op	   82454 B/op	      11 allocs/op
+BenchmarkWorkerPool-4   	     374	   3202914 ns/op	   82452 B/op	      11 allocs/op
+BenchmarkWorkerPool-4   	     386	   3090290 ns/op	   82448 B/op	      11 allocs/op
+BenchmarkWorkerPool-4   	     388	   3173697 ns/op	   82445 B/op	      11 allocs/op
+BenchmarkWorkerPool-4   	     579	   1964955 ns/op	   82444 B/op	      11 allocs/op
 PASS
-ok  	workerpool	14.251s
+ok  	workerpool	14.526s
