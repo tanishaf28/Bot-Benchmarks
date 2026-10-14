@@ -17,9 +17,8 @@ func process(items []int, workers int) []int {
 		workers = n
 	}
 
-	// The index travels with the value so each worker writes exactly one
-	// slot. Distinct indices do not need a mutex, and the result order
-	// matches the input.
+	// Index travels with the value so each job writes exactly one slot.
+	// Distinct indices do not race; WaitGroup.Wait happens-before return.
 	type job struct {
 		index int
 		value int
