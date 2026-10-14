@@ -1,3 +1,5 @@
+// Table-driven tests and benchmarks for process. Bug list for the broken
+// starter: docs/worker-pool-bugs.md in the project Agent Store (Context).
 package workerpool
 
 import "testing"
