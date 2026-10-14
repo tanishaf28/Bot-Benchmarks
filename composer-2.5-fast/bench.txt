@@ -1,0 +1,16 @@
+goos: linux
+goarch: amd64
+pkg: workerpool
+cpu: Intel(R) Xeon(R) Processor
+BenchmarkSequential-4   	   83316	     14386 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkSequential-4   	   79435	     15188 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkSequential-4   	   79862	     15437 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkSequential-4   	   82828	     15475 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkSequential-4   	   79946	     14707 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkWorkerPool-4   	     417	   2529686 ns/op	   82471 B/op	      11 allocs/op
+BenchmarkWorkerPool-4   	     493	   2398450 ns/op	   82431 B/op	      11 allocs/op
+BenchmarkWorkerPool-4   	     465	   2403239 ns/op	   82422 B/op	      11 allocs/op
+BenchmarkWorkerPool-4   	     454	   2469227 ns/op	   82428 B/op	      11 allocs/op
+BenchmarkWorkerPool-4   	     477	   2678940 ns/op	   82439 B/op	      11 allocs/op
+PASS
+ok  	workerpool	13.947s
